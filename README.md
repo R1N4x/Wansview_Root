@@ -9,4 +9,4 @@ Pins: VCC(square), Rx, GND, Tx
 
 Place the `facDiag` on the SD and boot the camera.
 
-This is possible through the `boot.sh` in the firmware wich checks for the file "facDiag" on the SD and executes it.
+This is possible through the `ipc_start.sh` in the firmware wich checks for the file "facDiag" on the SD and executes it.
