@@ -1,0 +1,6 @@
+# clear root password
+passwd -d root
+
+# continue Boot
+/mnt/mtd/app/initApp
+
