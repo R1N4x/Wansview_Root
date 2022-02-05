@@ -10,3 +10,14 @@ Pins: VCC(square), Rx, GND, Tx
 Place the `facDiag` on the SD and boot the camera.
 
 This is possible through the `ipc_start.sh` in the firmware wich checks for the file "facDiag" on the SD and executes it.
+
+
+# syscfg.ini
+
+You can also place the `syscfg.ini` on the SD with custom parameters.
+(e.g. your WiFi setting, no need to use the app!)
+
+Also you can enable Telnet.
+
+
+Use at your own risk!
