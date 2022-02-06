@@ -14,7 +14,7 @@ This is possible through the `ipc_start.sh` in the firmware wich checks for the 
 
 **Use at your own risk!**
 
-# syscfg.ini
+# syscfg.ini - Telnet access
 
 You can also place the `syscfg.ini` on the SD with custom parameters.
 (e.g. your WiFi settings, no need to use the app!)
@@ -22,6 +22,8 @@ You can also place the `syscfg.ini` on the SD with custom parameters.
 You can enable Telnet and set a custom NTP server.
 
 This acts as "update" for the configuration, changes there will be persistent.
+
+You don't need to open your camera when using this way :) 
 
 # /var/syscfg/
 
