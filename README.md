@@ -1,36 +1,13 @@
 # Wansview_Root
 
-Gain root access on an Wansview W6 serial console.
+Gain root access and enabling telnet.
 
-Serial connection via pads on the PCB.
-Thanks to: [postmortempriester](https://ipcamtalk.com/threads/wansview-w6-disassembly-finding-serial-console-a-question.55816/)
+You need to setup the camera once via App for now.
 
-Pinout: VCC(square), Rx, GND, Tx 
+Place the files on a sd-card and boot the camera with the sd-card.
+Telnet will be enabled with `root` and `changeme` as password.
 
-Place the `facDiag` on the SD and boot the camera.
-This will clear the root password on every reboot. This is not persistent.
-
-This is possible through the `ipc_start.sh` in the firmware wich checks for the file "facDiag" on the SD and executes it.
-
-**Use at your own risk!**
-
-# syscfg.ini - Telnet access
-
-You can also place the `syscfg.ini` on the SD with custom parameters.
-(e.g. your WiFi settings, no need to use the app!)
-
-You can enable Telnet and set a custom NTP server.
-
-This acts as "update" for the configuration, changes there will be persistent.
-
-You don't need to open the front of your camera - just put in a prepared SD-Card.
-
-# /var/syscfg/
-
-Changes here seem to be persistent.
-
-A script named `ipc_after.sh` placed here will be executed at boot.
-It will be executed together with `ipc_start.sh` (in /) so put a `sleep 10` in there at first to wait for the filessystem to be mounted as rw (you can set a root password then - take a look at the example). 
-
-~~E.g. `funtion.ini`, set `smatlink_enable` to `0` and it seems like the camera won't phone home anymore.~~
+`ipc_after.sh` is copied to persistent storage and will be called bot each boot.
+**This survives a reset! Delete the `ipc_after.sh` manually if you wish to remove root access!**
+To disable Telnet just edit the `syscfg.ini`.
 
