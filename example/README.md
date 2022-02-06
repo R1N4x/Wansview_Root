@@ -11,3 +11,12 @@ A wip example to setup the camera without the app and internet connection.
 
 When you're connected via serial you'll see the results of the QR-Code scan. 
 You can change the Wifi settings a few moments after reboot with a simple QR-Code...
+
+# Explaination
+
+A boot script in the cameras firmware will check for a file named `facDiag` on the SD-Card and executes it.
+The prepared `facDiag` then copies a `ipc_after.sh` script to the persistent memory of the camera. This `ipc_after.sh` is called at startup by the firmware and will set a root password for us.
+`facDiag` also copies a `wpa_supplicant.conf` to the persistant memory and the camera will use the content to connect to WiFi.
+The `syscfg.ini` in the persistent memory will be updated with the contents of the `syscfg.ini` from the SD-Card on every boot. 
+
+I still need to figure out why I need to scan a QR-Code to get ONFIV working, something is triggered. Sadly the whole camera control and such is in a compiled binary.
