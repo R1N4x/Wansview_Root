@@ -12,7 +12,7 @@ A wip example to setup the camera without the app and internet connection.
 When you're connected via serial you'll see the results of the QR-Code scan. 
 You can change the Wifi settings a few moments after reboot with a simple QR-Code...
 
-# Explaination
+# Explanation
 
 A boot script in the cameras firmware will check for a file named `facDiag` on the SD-Card and executes it.
 The prepared `facDiag` then copies a `ipc_after.sh` script to the persistent memory of the camera. This `ipc_after.sh` is called at startup by the firmware and will set a root password for us.
