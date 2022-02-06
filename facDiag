@@ -1,6 +1,4 @@
-# clear root password
-passwd -d root
-
-# continue Boot
-/mnt/mtd/app/initApp
-
+cp /mnt/mmc/icp_after.sh /var/syscfg/
+sleep 10
+rm /mnt/mmc/facDiag
+reboot
