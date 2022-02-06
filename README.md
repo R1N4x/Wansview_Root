@@ -28,4 +28,9 @@ You don't need to open the front of your camera - just put in a prepared SD-Card
 # /var/syscfg/
 
 Changes here seem to be persistent.
-E.g. `funtion.ini`, set `smatlink_enable` to `0` and it seems like the camera won't phone home anymore.
+
+A script named `ipc_after.sh` placed here will be executed at boot.
+It will be executed together with `ipc_start.sh` (in /) so put a `sleep 10` in there at first to wait for the filessystem to be mounted as rw (you can set a root password then - take a look at the example). 
+
+~~E.g. `funtion.ini`, set `smatlink_enable` to `0` and it seems like the camera won't phone home anymore.~~
+
