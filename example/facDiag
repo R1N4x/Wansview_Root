@@ -1,5 +1,0 @@
-cp -f /mnt/mmc/ipc_after.sh /var/syscfg/
-cp -f /mnt/mmc/wps_supplicant.conf /var/syscfg/
-rm /mnt/mmc/facDiag
-sleep 10
-reboot
