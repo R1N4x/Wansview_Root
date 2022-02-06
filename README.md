@@ -12,6 +12,7 @@ This will clear the root password on every reboot. This is not persistent.
 
 This is possible through the `ipc_start.sh` in the firmware wich checks for the file "facDiag" on the SD and executes it.
 
+**Use at your own risk!**
 
 # syscfg.ini
 
@@ -22,4 +23,7 @@ You can enable Telnet and set a custom NTP server.
 
 This acts as "update" for the configuration, changes there will be persistent.
 
-**Use at your own risk!**
+# /var/syscfg/
+
+Changes here seem to be persistent.
+E.g. `funtion.ini`, set `smatlink_enable` to `0` and it seems like the camera won't phone home anymore.
