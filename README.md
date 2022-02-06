@@ -23,7 +23,7 @@ You can enable Telnet and set a custom NTP server.
 
 This acts as "update" for the configuration, changes there will be persistent.
 
-You don't need to open your camera when using this way :) 
+You don't need to open the front of your camera - just put in a prepared SD-Card.
 
 # /var/syscfg/
 
