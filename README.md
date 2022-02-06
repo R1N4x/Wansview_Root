@@ -3,9 +3,9 @@
 Gain root access on an Wansview W6 serial console.
 
 Serial connection via pads on the PCB.
-Thanks to: https://ipcamtalk.com/threads/wansview-w6-disassembly-finding-serial-console-a-question.55816/
+Thanks to: [postmortempriester](https://ipcamtalk.com/threads/wansview-w6-disassembly-finding-serial-console-a-question.55816/)
 
-Pins: VCC(square), Rx, GND, Tx 
+Pinout: VCC(square), Rx, GND, Tx 
 
 Place the `facDiag` on the SD and boot the camera.
 This will clear the root password on every reboot. This is not persistent.
