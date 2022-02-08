@@ -6,7 +6,7 @@ Just copy all files onto an sd-card and boot the cam with it.
 
 It does the following:
 
-1. The camera will selfupdate the syscfg.ini in its persistent filesystem with the one provided on the sd-card. **It overwrites it!**
+1. The camera will self-update the syscfg.ini in its persistent filesystem with the one provided on the sd-card. **It overwrites it!**
 
 The example will: 
 - enable Telnet
@@ -33,3 +33,8 @@ The example will:
 
 1. wait 5+3 seconds, to wait fpr the filesystem to be mounted
 2. set the root password to `changeme`
+
+## Known issues and stuff
+
+1. removal of the default login `admin:123456` not possible, you can add users but not remove them
+2. I only teste the wired connection with this one
