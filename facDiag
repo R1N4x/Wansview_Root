@@ -1,4 +1,4 @@
 cp /mnt/mmc/ipc_after.sh /var/syscfg/
 sleep 10
-rm /mnt/mmc/facDiag
+mv /mnt/mmc/facDiag /mnt/mmc/facDiag_done
 reboot
