@@ -19,6 +19,8 @@ The example will:
 - disable third ddns (camera is blocked in my firewall, but off it is)
 - enable ONFIV on port 8899 (**caution!** default login! admin:123456)
 - enable RTSP on port 554 (**caution!** default login! admin:123456)
+- enable the IR LEDs (Mode 2 = ?)
+- enable IRcut (IR Filter)
 
 
 2. The camera checks for `facModify` and `facTest.ini` on the sd-card, if both are found it will execute `facModify`.
