@@ -38,3 +38,4 @@ The example will:
 
 1. removal of the default login `admin:123456` not possible, you can add users but not remove them
 2. I only teste the wired connection with this one
+3. this firmware version got the "snapshot via browser" feature, it's completely unsecured! **Be carefull!**
